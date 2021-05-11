@@ -9,7 +9,7 @@ var numsCopy = copyArrayInRange(nums, 2, 6);
 console.log(numsCopy);
 
 //----- FUNCTIONS -----//
-//returns copy of array values included in specified range (a < b)
+//returns copy of array values included in specified range (a < b), empty array otherwise
 function copyArrayInRange(array, a, b) {
     var arrayCopy = [];
     if (b >= array.length){

@@ -34,21 +34,32 @@ var teams = [
         fouls : 0
     }
 ];
-var teamsFouls = [];
 
-//fill goals and fouls with random ints, then copy teams to copy array without goals
+var teamsCopy = [];
+
+////fill goals and fouls with random ints, then copy teams to copy array without goals
 for (var i = 0; i < teams.length; i++) {
     teams[i].goals = getRandomInt(0, 100);
     teams[i].fouls = getRandomInt(0, 200);
-    teamsFouls.push(
+
+    //v2
+    teamsCopy.push(
         {
         name : teams[i].name,
         fouls : teams[i].fouls
         }
     );
+
+    //v1
+    // var currentTeam = [];
+    // currentTeam.push(teams[i].name, teams[i].fouls);
+    // teamsCopy.push(currentTeam);
+
+    console.log(teams[i].name, "ha subito", teams[i].fouls, "falli");
 }
+
 console.log(teams);
-console.log(teamsFouls);
+console.log(teamsCopy);
 
 //----- FUNCTIONS -----//
 //get random int, inclusive
