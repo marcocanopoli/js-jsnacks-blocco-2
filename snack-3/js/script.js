@@ -17,9 +17,7 @@ function copyArrayInRange(array, a, b) {
     } else if (a > b) {
         alert("Range non valido: " + a + " e' maggiore di " + b);
     } else {
-        for (var i = a; i <= b; i++) {
-            arrayCopy.push(array[i]);
-        }
+        arrayCopy = array.slice(a, b + 1 );
     }
     return arrayCopy;
 }
