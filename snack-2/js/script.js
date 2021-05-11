@@ -39,7 +39,7 @@ var teamsFouls = [];
 //fill goals and fouls with random ints, then copy teams to copy array without goals
 for (var i = 0; i < teams.length; i++) {
     teams[i].goals = getRandomInt(0, 100);
-    teams[i].fouls = getRandomInt(0, 500);
+    teams[i].fouls = getRandomInt(0, 200);
     teamsFouls.push(
         {
         name : teams[i].name,
