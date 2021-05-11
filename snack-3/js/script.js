@@ -4,9 +4,9 @@ Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più p
 La funzione restituirà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 */
 
-var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-var array2 = copyArrayInRange(array, 2, 7);
-console.log(array2);
+var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+var numsCopy = copyArrayInRange(nums, 2, 7);
+console.log(numsCopy);
 
 //----- FUNCTIONS -----//
 //returns copy of array values included in specified range (a < b)
